@@ -17,8 +17,6 @@ class MainDetailsScreen extends StatelessWidget {
     double containerHeight = context.screenHeight * .18;
     return Scaffold(
       backgroundColor: AppColors.backgroundMainColor,
-      extendBody: true,
-      resizeToAvoidBottomInset: false,
       body: Stack(
         children: <Widget>[
           Positioned(

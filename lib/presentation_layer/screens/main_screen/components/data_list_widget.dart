@@ -57,8 +57,8 @@ class _DataListWidgetState extends State<DataListWidget> {
                               right: 0,
                               left: 0,
                               child: search.isUsersNotFound
-                                  ? const NoDataCommingFromApiScreen(
-                                      descriptionText: "User Not Found",
+                                  ? NoDataCommingFromApiScreen(
+                                      descriptionText: "User not \"${search.searchingController.text}\" found in users",
                                       imagePath: ImagePath.noDataImage,
                                     )
                                   : ListView.separated(

@@ -8,6 +8,7 @@ class MainScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
+      resizeToAvoidBottomInset: false,
       body: DataListWidget(),
       bottomNavigationBar: BottomAppBar(
         child: ApiCallButtonWidget(),

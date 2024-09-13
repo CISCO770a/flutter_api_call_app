@@ -28,9 +28,9 @@ class NoDataCommingFromApiScreen extends StatelessWidget {
             ),
           ),
           SizedBox(
-            height: context.screenHeight * .08,
+            height: context.screenHeight * .04,
           ),
-           Text(
+          Text(
             descriptionText,
             style: const TextStyle(
               fontSize: 20,

@@ -40,7 +40,7 @@ class SearchUserFieldWidget extends StatelessWidget {
               focusedBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(20.0),
                 borderSide: const BorderSide(
-                  color: AppColors.mainColor,
+                  color: AppColors.mainBorderColor,
                   width: 2.0,
                 ),
               ),

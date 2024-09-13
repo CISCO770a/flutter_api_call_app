@@ -1,4 +1,5 @@
 import 'package:apiapp/data_layer/users_model.dart';
+import 'package:apiapp/presentation_layer/app_constanst/app_colors.dart';
 import 'package:apiapp/presentation_layer/app_constanst/app_dimensionals.dart';
 import 'package:apiapp/presentation_layer/app_constanst/app_fonts.dart';
 import 'package:apiapp/presentation_layer/commone/navigate_to.dart';
@@ -75,6 +76,7 @@ class _UserItemWidgetState extends State<UserItemWidget> {
           navigateTo(
             root: MainDetailsScreen(userData: widget.userData),
           );
+          FocusScope.of(context).requestFocus(FocusNode());
         },
         child: Stack(
           children: <Widget>[
@@ -186,7 +188,7 @@ class _UserItemWidgetState extends State<UserItemWidget> {
                 height: context.screenHeight * .05,
                 width: context.screenWidth * .1,
                 decoration: const BoxDecoration(
-                  color: Color(0xFF004e89),
+                  color: AppColors.mainColor,
                   borderRadius: BorderRadius.horizontal(
                     left: Radius.circular(30.0),
                   ),

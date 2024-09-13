@@ -10,6 +10,7 @@ class ApiCallButtonWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
         Align(
           alignment: Alignment.center,
@@ -20,6 +21,7 @@ class ApiCallButtonWidget extends StatelessWidget {
                 height: context.screenHeight * .08,
                 child: MaterialButton(
                   onPressed: () {
+                    apiData.isInternetError = false;
                     apiData.fetchUserList;
                   },
                   shape: RoundedRectangleBorder(
