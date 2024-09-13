@@ -1,3 +1,4 @@
+import 'package:apiapp/presentation_layer/app_constanst/app_colors.dart';
 import 'package:apiapp/presentation_layer/app_constanst/app_dimensionals.dart';
 import 'package:apiapp/presentation_layer/app_constanst/app_images.dart';
 import 'package:apiapp/presentation_layer/screens/main_screen/components/searsh_user_field_widget.dart';
@@ -13,7 +14,7 @@ class CustomAppBarWidget extends StatelessWidget {
       width: context.screenWidth,
       padding: const EdgeInsets.all(10.0),
       decoration: const BoxDecoration(
-        color: Color(0xFF1a659e),
+        color: AppColors.mainColor,
         borderRadius: BorderRadius.vertical(
           bottom: Radius.circular(20.0),
         ),

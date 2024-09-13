@@ -1,3 +1,4 @@
+import 'package:apiapp/presentation_layer/app_constanst/app_colors.dart';
 import 'package:apiapp/presentation_layer/app_constanst/app_dimensionals.dart';
 import 'package:apiapp/statemanagemant_layer/api_methods/catch_data_provider.dart';
 import 'package:flutter/material.dart';
@@ -10,26 +11,6 @@ class ApiCallButtonWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: <Widget>[
-        Align(
-          alignment: Alignment.centerLeft,
-          child: Consumer<CatchDataFromApiProvider>(
-            builder: (context, catchData, _) {
-              return GestureDetector(
-                onTap: () {
-                  catchData.clearDataList;
-                  catchData.isInternetError = false;
-                },
-                child: const CircleAvatar(
-                  radius: 30,
-                  child: Icon(Icons.delete),
-                ),
-              );
-            },
-          ),
-        ),
-        SizedBox(
-          width: context.screenWidth * .05,
-        ),
         Align(
           alignment: Alignment.center,
           child: Consumer<CatchDataFromApiProvider>(
@@ -44,7 +25,7 @@ class ApiCallButtonWidget extends StatelessWidget {
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20.0),
                   ),
-                  color: const Color(0xFF3a506b),
+                  color: AppColors.mainColor,
                   child: const Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[

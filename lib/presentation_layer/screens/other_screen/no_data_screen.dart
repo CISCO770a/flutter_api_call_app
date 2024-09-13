@@ -1,3 +1,4 @@
+import 'package:apiapp/presentation_layer/app_constanst/app_colors.dart';
 import 'package:apiapp/presentation_layer/app_constanst/app_dimensionals.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -34,7 +35,7 @@ class NoDataCommingFromApiScreen extends StatelessWidget {
             style: const TextStyle(
               fontSize: 20,
               fontWeight: FontWeight.bold,
-              color: Colors.red,
+              color: AppColors.errorColor,
             ),
           ),
         ],

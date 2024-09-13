@@ -1,4 +1,5 @@
 import 'package:apiapp/data_layer/users_model.dart';
+import 'package:apiapp/presentation_layer/app_constanst/app_colors.dart';
 import 'package:apiapp/presentation_layer/app_constanst/app_dimensionals.dart';
 import 'package:apiapp/presentation_layer/screens/details_screen/components/user_details_widget.dart';
 import 'package:flutter/material.dart';
@@ -15,7 +16,7 @@ class MainDetailsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     double containerHeight = context.screenHeight * .18;
     return Scaffold(
-      backgroundColor: const Color(0xFFdae5eb),
+      backgroundColor: AppColors.backgroundMainColor,
       extendBody: true,
       resizeToAvoidBottomInset: false,
       body: Stack(

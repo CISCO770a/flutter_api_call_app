@@ -1,3 +1,4 @@
+import 'package:apiapp/presentation_layer/app_constanst/app_colors.dart';
 import 'package:apiapp/presentation_layer/commone/navigator_key.dart';
 import 'package:apiapp/presentation_layer/screens/main_screen/main_screen.dart';
 import 'package:apiapp/statemanagemant_layer/app_providers.dart';
@@ -24,7 +25,7 @@ class APIAppRoot extends StatelessWidget {
           home: const MainScreen(),
           theme: ThemeData(
             colorScheme: ColorScheme.fromSeed(
-              seedColor: const Color(0xFF6fffe9),
+              seedColor: AppColors.mainColor,
             ),
           ),
         );
