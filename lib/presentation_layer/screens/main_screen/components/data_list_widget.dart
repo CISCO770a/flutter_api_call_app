@@ -44,7 +44,7 @@ class _DataListWidgetState extends State<DataListWidget> {
                 children: <Widget>[
                   catchData.isInternetError
                       ? const NoDataCommingFromApiScreen(
-                          descriptionText: "Ceck internet connection",
+                          descriptionText: "Check the internet connection",
                           imagePath: ImagePath.internetConnectionError,
                         )
                       : catchData.isLoadding
